@@ -369,28 +369,58 @@ export default function PerearstiTyypQuiz() {
     setCurrentIndex(0);
   };
 
-  const handleSendEmail = (e) => {
-    e.preventDefault();
-    if (!result) return;
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/xwpyvkao";
 
-    if (!email || !email.includes("@")) {
-      setEmailStatus("Palun sisesta kehtiv e-posti aadress.");
-      return;
+const handleSendEmail = async (e) => {
+  e.preventDefault();
+  if (!result) return;
+
+  if (!email || !email.includes("@")) {
+    setEmailStatus("Palun sisesta kehtiv e-posti aadress.");
+    return;
+  }
+
+  const subject = `Sinu perearsti tüüp: ${result.title} (${result.mbti})`;
+  const body = buildEmailBody(name, result, summary);
+
+  setEmailStatus("Saadan andmed...");
+
+  try {
+    const formData = new FormData();
+    // väljade nimed: email, name, subject, message
+    formData.append("email", email);
+    formData.append("name", name || "tudeng");
+    formData.append("subject", subject);
+    formData.append("message", body);
+
+    const response = await fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+      },
+      body: formData,
+    });
+
+    if (response.ok) {
+      setEmailStatus(
+        "Tulemus saadeti edukalt Formspree kaudu. Kontrolli oma postkasti (ja/või Formspree vormi seadistatud adressaati). 📬"
+      );
+      // soovi korral: tühjenda ainult email/name väljad, mitte kogu quizi state
+      // setEmail("");
+      // setName("");
+    } else {
+      setEmailStatus(
+        "Midagi läks valesti Formspree poolel. Proovi hiljem uuesti või kopeeri tulemus käsitsi."
+      );
     }
-
-    const subject = `Sinu perearsti tüüp: ${result.title} (${result.mbti})`;
-    const body = buildEmailBody(name, result, summary);
-
-    const mailtoLink = `mailto:${encodeURIComponent(
-      email
-    )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Avame kasutaja meiliprogrammi
-    window.location.href = mailtoLink;
+  } catch (err) {
+    console.error(err);
     setEmailStatus(
-      "Avati e-kirja aken. Kontrolli kirja sisu ja vajuta saatmiseks \"Send\" / \"Saada\"."
+      "Ei saanud Formspree'ga ühendust. Kontrolli internetti ja proovi uuesti."
     );
-  };
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-dark via-brand-mid to-brand-light text-slate-900 flex items-center justify-center px-4 py-8">
