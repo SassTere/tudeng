@@ -344,6 +344,10 @@ export default function PerearstiTyypQuiz() {
   const [email, setEmail] = useState("");
   const [emailStatus, setEmailStatus] = useState(null);
 
+  const [showAllTypes, setShowAllTypes] = useState(false);
+  const [expandedType, setExpandedType] = useState(null); // millise kaardi kirjeldus on lahti
+
+
   const currentQuestion = questions[currentIndex];
 
   const handleAnswer = (choice) => {
@@ -570,6 +574,75 @@ const handleSendEmail = async (e) => {
                 </p>
             </section>
             )}
+            <div className="mt-8 flex justify-center">
+              <button
+                type="button"
+                onClick={() => setShowAllTypes((prev) => !prev)}
+                className="px-4 py-2 rounded-full border border-brand-dark text-brand-dark text-sm md:text-base font-medium bg-white hover:bg-brand-dark hover:text-white transition-all shadow-sm"
+              >
+                {showAllTypes ? "Peida kõik tulemused" : "Vaata kõiki tulemusi"}
+              </button>
+            </div> 
+
+            {/* Kõik perearsti tüübid gridina */}
+            {showAllTypes && (
+              <section className="mt-8 border-t border-slate-200 pt-6">
+                <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-4 text-center">
+                  Kõik perearsti tüübid
+                </h3>
+
+                <div className="grid gap-4 md:gap-6 md:grid-cols-2">
+                  {Object.entries(typeMap).map(([mbtiKey, info]) => (
+                    <button
+                      key={mbtiKey}
+                      type="button"
+                      onClick={() =>
+                        setExpandedType((prev) => (prev === mbtiKey ? null : mbtiKey))
+                      }
+                      className={`text-left rounded-3xl border transition-all duration-150 shadow-sm hover:shadow-md focus:outline-none bg-white ${
+                        expandedType === mbtiKey
+                          ? "border-brand-dark"
+                          : "border-slate-200"
+                      }`}
+                    >
+                      <div className="flex flex-col items-center text-center p-4 md:p-5 gap-3">
+                        {/* tüübipilt */}
+                        {info.image && (
+                          <img
+                            src={info.image}
+                            alt={info.title}
+                            className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-3xl shadow-md"
+                          />
+                        )}
+
+                        {/* pealkirjad */}
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.2em] text-slate-500 mb-1">
+                            {mbtiKey}
+                          </p>
+                          <p className="text-base md:text-lg font-semibold text-slate-900">
+                            {info.title}
+                          </p>
+                          {info.subtitle && (
+                            <p className="text-xs md:text-sm text-slate-600 mt-1">
+                              {info.subtitle}
+                            </p>
+                          )}
+                        </div>
+
+                        {/* description – kuvatakse ainult valitud kaardil */}
+                        {expandedType === mbtiKey && (
+                          <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
+                            {info.description}
+                          </p>
+                        )}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </section>
+            )}
+
 
 
             <section>
