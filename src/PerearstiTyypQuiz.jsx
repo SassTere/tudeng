@@ -10,10 +10,12 @@ const questions = [
       A: {
         text: "Mulle isegi meeldib – iga patsient on uus väike kohtumine ja energialaeng.",
         letter: "E",
+        image: "/answers/q1-a.jpg",
       },
       B: {
         text: "Tõmban sügavalt hinge ja keskendun: lähen ükshaaval süvitsi, mitte show'd tegema.",
         letter: "I",
+        image: "/answers/q1-b.jpg",
       },
     },
   },
@@ -25,10 +27,12 @@ const questions = [
       A: {
         text: "Olen küll väsinud, aga patsientidega suhtlus annab pigem energiat.",
         letter: "E",
+        image: "/answers/q2-a.jpg",
       },
       B: {
         text: "Tunnen, et mul on sotsiaalne aku tühi ja vajan vaikust, et taastuda.",
         letter: "I",
+        image: "/answers/q2-b.jpg",
       },
     },
   },
@@ -40,10 +44,12 @@ const questions = [
       A: {
         text: "Alustan konkreetsetest numbritest, varasematest diagnoosidest ja ravijuhendist.",
         letter: "S",
+        image: "/answers/q3-a.jpg",
       },
       B: {
         text: "Püüan esmalt aru saada tema elust ja suurest pildist – töö, pere, harjumused –, siis sobitan sinna meditsiini.",
         letter: "N",
+        image: "/answers/q3-b.jpg",
       },
     },
   },
@@ -55,10 +61,12 @@ const questions = [
       A: {
         text: "Tõmban alla ja loen läbi: annused, samm-sammulised algoritmid, tabelid.",
         letter: "S",
+        image: "/answers/q4-a.jpg",
       },
       B: {
         text: "Uurin pigem, kuidas see juhend mõtteviisi muudab ja millist tuleviku perearsti see eeldab.",
         letter: "N",
+        image: "/answers/q4-b.jpg",
       },
     },
   },
@@ -70,10 +78,12 @@ const questions = [
       A: {
         text: "Selgitan rahulikult faktid, riskid ja miks antibiootikum ei ole näidustatud – isegi kui ta selle peale mossi läheb.",
         letter: "T",
+        image: "/answers/q5-a.jpg",
       },
       B: {
-        text: "Püüan kõigepealt tema hirmu mõista ja siis talle kaasa minnes selgitada, miks teeme teisiti.",
+        text: "Püüan kõigepealt tema hirmu mõista ja siis selgitada, miks teeme teisiti.",
         letter: "F",
+        image: "/answers/q5-b.jpg",
       },
     },
   },
@@ -85,10 +95,12 @@ const questions = [
       A: {
         text: "Hoian siiski ajaraamist kinni – saan tema mure ära kuulata, aga pean päevaplaani hoidma.",
         letter: "T",
+        image: "/answers/q6-a.jpg",
       },
       B: {
         text: "Lasen tal natuke kauem rääkida ja otsin võimalusi, kuidas ta sotsiaalset tuge suurendada, isegi kui graafik natuke nihkuma hakkab.",
         letter: "F",
+        image: "/answers/q6-b.jpg",
       },
     },
   },
@@ -98,27 +110,31 @@ const questions = [
     dimension: "JP",
     options: {
       A: {
-        text: "Mulle meeldib selge päevakava – kindlad ajad kroonilistele, ägedatele, e-konsultatsioonidele, tiimikoosolekule.",
+        text: "Mulle meeldib selge päevakava – kindlad ajad kroonilistele, kiireloomulistele, e-konsultatsioonidele, tiimikoosolekule.",
         letter: "J",
+        image: "/answers/q7-a.jpg",
       },
       B: {
-        text: "Jätan päevakavasse hingamisruumi, kuhu saab vajadusel lisada ägedaid juhtumeid või pikemaid vestlusi.",
+        text: "Jätan päevakavasse hingamisruumi, kuhu saab vajadusel lisada kiireloomulisi juhtumeid või pikemaid vestlusi.",
         letter: "P",
+        image: "/answers/q7-b.jpg",
       },
     },
   },
   {
     id: 8,
-    text: "E-konsultatsioonid ja digiregistratuur toovad ootamatult palju pöördumisi:",
+    text: "Ootamatud patsiendid ja lakkamatud kõned toovad ootamatult palju pöördumisi:",
     dimension: "JP",
     options: {
       A: {
-        text: "Loome konkreetse protsessi: kes mida triageerib, mis on vastamise tähtajad, selged reeglid.",
+        text: "Loome konkreetse protsessi: kes mida triažeerib, mis on vastamise tähtajad, selged reeglid.",
         letter: "J",
+        image: "/answers/q8-a.jpg",
       },
       B: {
         text: "Proovin esmalt paindlikult kohaneda: vaatan, mis päriselt töötab, ja timmin süsteemi jooksvalt.",
         letter: "P",
+        image: "/answers/q8-b.jpg",
       },
     },
   },
@@ -130,99 +146,116 @@ const typeMap = {
     title: "Süsteemi Arhitekt",
     subtitle: "Struktureeritud ja põhjalik perearst",
     description:
-      "Sa hoiad perearstikeskuse töövoo, protsessid ja kvaliteedi joone peal. Patsient saab sinu juures süsteemset ja järjepidevat ravi.",
+      "Sa hoiad perearstikeskuse töövoo, protsessid ja kvaliteedi joone peal – sinu jaoks on oluline, et asjad oleksid tehtud õigesti ja samamoodi ka homme. Sul on hea mälu detailide ja juhiste osas ning patsient saab sinu juures süsteemset, järjepidevat ravi. Oled sageli see, kes märkab dokumentatsioonis, ravimite koostoimetes või jälgimisplaanis pisikesi auke. Jälgi, et perfektsuse taotlus ei võtaks sinult paindlikkust – vahel vajab patsient rohkem inimest, mitte ideaalset tabelit.",
+    image: "/result/ISTJ.png",
   },
   ISFJ: {
     title: "Kogukonna Kangelane",
     subtitle: "Turvaline ja hooliv perearst",
     description:
-      "Sa tunned oma patsientide lugusid, hoiad pikemaid suhteid ja oled sageli pere usaldusisik mitme põlvkonna ulatuses.",
+      "Sa tunned oma patsientide lugusid, hoiad pikemaid suhteid ja oled sageli pere usaldusisik mitme põlvkonna ulatuses. Sa märkad väikeseid muutusi inimeste käitumises ja olekus, mis teistel jäävad märkamata. Patsiendid tulevad sinu juurde, sest tunnevad, et sa tõesti hoolid nendest kui inimesest, mitte ainult diagnoosist. Jälgi, et sa ei võtaks liiga palju teiste muresid endaga koju kaasa – ka hoolival perearstil on vaja teadlikult enda energia ja piiride eest hoolitseda.",
+    image: "/result/ISFJ.png",
   },
   INFJ: {
     title: "Zen-Empaatiline Perearst",
     subtitle: "Sügav kuulaja ja märgaja",
     description:
-      "Sa tabad varjatud muresid, kuulad rahulikult ja toetad eriti hästi vaimse tervise ning elukriiside korral.",
+      "Sa tabad varjatud muresid, kuulad rahulikult ja toetad eriti hästi vaimse tervise ning elukriiside korral. Sul on võime näha inimese lugu laiemalt – kuidas tervis, suhted, töö ja väärtused omavahel seotud on. Patsient võib sinu juures esimest korda tunda, et keegi paneb tema killud tervikuks. Samas võid ise kergesti üle koormatud saada, kui proovida kõiki „päästa“ – sinu tugevus tuleb paremini esile siis, kui jagad vastutust meeskonnaga ega unusta ka enda vajadusi.",
+    image: "/result/INFJ.png",
   },
   INTJ: {
     title: "Diagnostika Detektiiv",
     subtitle: "Strateegiline probleemilahendaja",
     description:
-      "Sind käivitavad keerukad juhud ja süsteemsed lahendused. Sa ei lepi lihtsa selgitusega, kui andmed seda ei toeta.",
+      "Sind käivitavad keerukad juhud ja süsteemsed lahendused – sa tahad aru saada, miks midagi juhtub, mitte ainult sümptomeid leevendada. Oskad kiiresti eristada olulist müra taustast ja luua loogilise diagnoosimudeli. Samal ajal näed ka suurt pilti: millised muutused teeksid kogu perearstisüsteemi mõistlikumaks ja tõhusamaks. Pane tähele, et sinu otsekohene loogika ei kõlaks patsiendi jaoks külmalt – vahel on vaja esmalt turvatunnet, alles siis geniaalset plaani.",
+    image: "/result/INTJ.png",
   },
   ISTP: {
     title: "Diagnostika Detektiiv",
     subtitle: "Rahulik analüütik",
     description:
-      "Sa süvened faktidesse, võrdled mustreid ja leiad sageli üles just selle haruldase diagnoosi, mis teistel märkamata jääb.",
+      "Sa süvened faktidesse, võrdled mustreid ja leiad sageli üles just selle haruldase diagnoosi, mis teistel märkamata jääb. Oled eriti tugev olukordades, kus on vaja kiiret, aga selget otsust – näiteks ägedate seisundite käsitlemisel või protseduuride tegemisel. Sind hinnatakse, sest sa ei paanitse ja jääd ka pingelises olukorras ratsionaalseks. Suhte poolel võib sul vahel jääda mõni tunne märkamata – kui teadlikult kuulad ka seda, mis sõnade vahele jääb, suureneb patsientide usaldus veelgi.",
+    image: "/result/ISTP.png",
   },
   ISFP: {
     title: "Zen-Empaatiline Perearst",
     subtitle: "Vaikne, kuid väga hoidev",
     description:
-      "Sa ei vaja rambivalgust – sinu tugevus on soe kohalolu, rahulik selgitamine ja patsiendi jaoks olemas olemine.",
+      "Sa ei vaja rambivalgust – sinu tugevus on soe kohalolu, rahulik selgitamine ja patsiendi jaoks olemas olemine. Inimesed tajuvad, et sinu juures võib olla „päriselt tema ise“, ilma et peaks mängima tubli patsiendi rolli. Sageli oled hea valik keeruliste elusituatsioonide, kroonilise valu või palliatiivsete teemade puhul, sest sul on loomulik empaatia. Vahel võid aga vältida konflikti või ebamugavaid vestlusi, et mitte kedagi haavata – teadlik „jah“ ja „ei“ ütlemine aitab kaitsta ka sinu enda energiat.",
+    image: "/result/ISFP.png",
   },
   INFP: {
     title: "Zen-Empaatiline Perearst",
     subtitle: "Ideaalist kantud hoolija",
     description:
-      "Sa tahad, et patsiendil päriselt parem oleks – mitte ainult numbrites, vaid ka elukvaliteedis ja enesetundes.",
+      "Sa tahad, et patsiendil päriselt parem oleks – mitte ainult numbrites, vaid ka elukvaliteedis ja enesetundes. Sageli näed inimest kui tervikut ja otsid lahendusi, mis sobiksid tema väärtuste ja elustiiliga. Võid olla eriti hea noorte, tundlike või „süsteemikartlike“ patsientidega, sest sinu juures ei pea mängima tugevat. Samas võib ideaalne lahendus jääda mõnikord reaalsusega kokku põrkama – kui lubad endale ka väikeseid praktilisi kompromisse, on sul lihtsam oma põhimõtteid pikaajaliselt hoida.",
+    image: "/result/INFP.png",
   },
   INTP: {
     title: "Diagnostika Detektiiv",
     subtitle: "Uudishimulik mõttelabor",
     description:
-      "Sa naudid diagnostilisi mõistatusi ja tõenduspõhisust. Su peas elab väike teadlane, kes alati küsib: miks?",
+      "Sa naudid diagnostilisi mõistatusi ja tõenduspõhisust – sinu peas elab väike teadlane, kes alati küsib „miks“. Võid olla see perearst, kelle juurde saadetakse „müstilised“ juhud, millele keegi teine lahendust ei leia. Sul on tugev analüütiline mõtlemine ja oskus meditsiiniuuringuid kriitiliselt lugeda. Patsiendiga suhtluses tasub aga jälgida, et seletus ei muutuks liiga abstraktseks – kui lisad keerulisele loogikale ka lihtsa metafoori või näite, jõuab sinu geniaalne analüüs patsiendini palju paremini.",
+    image: "/result/INTP.png",
   },
   ESTP: {
     title: "Kiirreageerija ja Multitaskija",
     subtitle: "Ägedate juhtude lemmik",
     description:
-      "Sa oled omas elemendis siis, kui päev on tihe ja ettearvamatu. Kiired otsused ja praktilised lahendused on sinu tugevus.",
+      "Sa oled omas elemendis siis, kui päev on tihe ja ettearvamatu – keeruline triaaž, ootamatud olukorrad ja kiire otsustamine sobivad sulle. Patsiendid tajuvad sind tihti „tegutseja“ tüüpi arstina, kes ei jää liiga kauaks mõtlema, kui on vaja abi. Sa õpid hästi kogemusest ja praktilisest tööst ning sul on loomulik julgus võtta vastutust. Samas võib rutiinne dokumentatsioon ja detailne järelkontroll tunduda tüütuna – kui lood endale lihtsad rutiinid ja tiimi toe paberitöö jaoks, saab sinu tugevus veel paremini särada.",
+    image: "/result/ESTP.png", 
   },
   ESFP: {
     title: "Kiirreageerija ja Multitaskija",
     subtitle: "Särav suhtleja",
     description:
-      "Patsiendiga kontakti loomine on sinu supervõime. Sa tood kabinetti soojust ja julgustad inimesi oma muredest rääkima.",
+      "Patsiendiga kontakti loomine on sinu supervõime – inimesed avanevad sulle kiiresti ja räägivad ka teemadest, mis muidu jääksid varju. Sa tood kabinetti soojust, huumorit ja inimlikkust ning oskad pingelisi olukordi pehmendada. Eriti hästi sobid sa olukordadesse, kus on vaja hirmu vähendada – olgu selleks protseduurid, vaktsineerimised või keerulised diagnoosid. Samas võib pikem, struktureeritud tööplaan tunduda piiravana – kui võtad teadlikult aega ka dokumenteerimiseks ja järeltegevuste fikseerimiseks, toetab see sinu loomulikku annet veelgi.",
+    image: "/result/ESFP.png",
   },
   ENFP: {
     title: "Kiirreageerija ja Multitaskija",
     subtitle: "Loov ja energiline perearst",
     description:
-      "Sa näed inimest tervikuna ja leiad sageli loovaid, elustiilikeskseid lahendusi. Rutiin ei tohi liiga pikalt kesta.",
+      "Sa näed inimest tervikuna ja leiad sageli loovaid, elustiilikeskseid lahendusi – näiteks kuidas siduda ravi patsiendi hobide ja igapäevaeluga. Sul on palju ideid, kuidas perearstisüsteemi inimlikumaks ja paindlikumaks muuta, ning sa sütitad oma energiaga nii kolleege kui patsiente. Oled eriti hea muutuste käivitaja: patsiendid tunnevad, et sinu juures on tõesti võimalik oma harjumusi muuta. Väljakutseks võib olla järjepidevus ja rutiin – kui sead endale lihtsad struktuurid, mis aitavad lubadusi jälgida, saad oma loovust kasutada ilma läbipõlemata.",
+    image: "/result/ENFP.png",
   },
   ENTP: {
     title: "Kiirreageerija ja Multitaskija",
     subtitle: "Debattivõimeline ideegeneraator",
     description:
-      "Sa armastad arutada uusi raviviise, digiideid ja süsteemimuudatusi. Patsiendid saavad sinult värskeid vaatenurki.",
+      "Sa armastad arutada uusi raviviise, digiideid ja süsteemimuudatusi ning näed kiiresti, kuidas süsteemi nutikamaks teha. Patsientidele tood sa värskeid vaatenurki olukordadele, mis on neile endale tundunud ummikuna. Oled hea argumenteerija ja suudad keerulised valikud lahti rääkida nii, et inimene saab otsustamises päriselt kaasa mõelda. Samas tasub jälgida, et sinu vaimne tempo ei jätaks aeglasema tempoga patsiente maha – kui aeglustad selgituse lõpus tempo ja küsid, mida nemad kuulsid, saad oma tugevust veel paremini rakendada.",
+    image: "/result/ENTP.png",
   },
   ESTJ: {
     title: "Süsteemi Arhitekt",
     subtitle: "Korras süsteem, parem ravi",
     description:
-      "Sa usud, et hea meditsiin vajab häid protsesse. Tänu sinule jookseb perearstikeskus nagu hästi õlitatud masin.",
+      "Sa usud, et hea meditsiin vajab häid protsesse – järjekorrad, rollid ja vastutus peavad olema selged. Tänu sinule jookseb perearstikeskus nagu hästi õlitatud masin ja patsiendid teavad, mida millal oodata. Oled hea otsustaja ja ei karda võtta vastutust, kui olukord nõuab kiiret tegutsemist. Võid aga vahel tunda frustratsiooni, kui teised ei pea reeglitest kinni või liiguvad aeglasemalt – teadlik pehmus ja huumor aitavad sul oma loomulikku juhtimispotentsiaali kasutada nii, et tiim tunneb end kaasatuna, mitte kamandatuna.",
+    image: "/result/ESTJ.png",
   },
   ESFJ: {
     title: "Kogukonna Kangelane",
     subtitle: "Perearst, keda kõik teavad nimepidi",
     description:
-      "Sa oled inimeste inimene – patsient tunneb, et on oodatud ja hoitud. Suhted ja kogukond on sinu suurimad tugevused.",
+      "Sa oled inimeste inimene – patsient tunneb, et on oodatud ja hoitud, ning sina märkad, kui keegi jääb kõrvale. Sul on loomulik oskus hoida häid suhteid nii patsientide, õdede kui kolleegidega, mis teeb sinust sageli perearstikeskuse sotsiaalse südamiku. Oled tugev tervisekäitumise mõjutaja: sinu julgustus ja positiivne surve aitavad inimestel reaalselt oma harjumusi muuta. Samas võib sul olla raske „ei“ öelda või ebapopulaarseid otsuseid kommunikeerida – kui õpid end selle juures mitte süüdistama, püsib sinu hoolimine tervena.",
+    image: "/result/ESFJ.png",
   },
   ENFJ: {
     title: "Kogukonna Kangelane",
     subtitle: "Inspireeriv perearst",
     description:
-      "Sa suudad patsiente motiveerida muutustele – olgu see suitsetamisest loobumine või liikumisharjumuse leidmine.",
+      "Sa suudad patsiente motiveerida muutustele – olgu see suitsetamisest loobumine, liikumisharjumuse leidmine või teraapiasse minek. Sul on hea vaist, kuidas inimest kõnetada just talle sobivas keeles, ning sa näed kiiresti, mis teda tegelikult edasi aitaks. Sageli tõmbad ligi ka keerulisemate lugudega inimesi, sest sinuga on turvaline. Oht peitub selles, et võid võtta vastutust rohkem, kui tervislik on – kui õpid delegeerima, säilib sinu võime inspireerida pikalt ja ilma läbipõlemiseta.",
+    image: "/result/ENFJ.png",
   },
   ENTJ: {
     title: "Süsteemi Arhitekt",
     subtitle: "Visiooniga juht-perearst",
     description:
-      "Sa tahad lisaks patsientide ravile muuta ka süsteemi. Digilahendused, uued töökorraldused ja projektid tõmbavad sind.",
+      "Sa tahad lisaks patsientide ravile muuta ka süsteemi – näed, kuidas perearstikeskus, piirkonna tervishoid või digilahendused võiksid töötada palju paremini. Oled loomulik projektide käivitaja ja tiimijuht, kes suudab suure pildi tükkideks jagada ja need ka ellu viia. Patsiendi tasandil väljendub see selgete plaanidena ja konkreetse juhendusena, mis annab turvatunde. Väljakutse võib olla kannatlikkus nende suhtes, kes ei liigu sama kiiresti – kui võtad teadlikult aega ka kuulamiseks ja tausta mõistmiseks, saad oma tugevat visiooni veel tõhusamalt ellu viia.",
+    image: "/result/ENTJ.png",
   },
 };
+
 
 function calculateMbti(answers) {
   // Loeme iga tähe esinemise
@@ -430,8 +463,7 @@ const handleSendEmail = async (e) => {
             Milline perearst sina oled?
           </h1>
           <p className="text-sm md:text-base text-slate-600">
-            Lühike ja lõbus konverentsimäng arstitudengitele – Briggs–Myersi
-            inspiratsiooniga, aga täiesti mitteametlik.
+            Tee 8 valikut ja saa teada.
           </p>
         </div>
 
@@ -440,32 +472,48 @@ const handleSendEmail = async (e) => {
             <ProgressBar current={currentIndex} total={questions.length} />
 
             <div className="mb-6">
-              <h2 className="text-lg md:text-xl font-semibold text-slate-900 mb-4">
+              <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 text-center mt-8 mb-6 px-4">
                 {currentQuestion.text}
               </h2>
-                <div className="space-y-3">
+                <div className="space-y-4">
                 {["A", "B"].map((key) => {
                     const option = currentQuestion.options[key];
                     const isSelected = answers[currentQuestion.id] === key;
+
                     return (
                     <button
                         key={key}
                         type="button"
                         onClick={() => handleAnswer(key)}
-                        className={`w-full text-left px-4 py-3 rounded-xl border text-sm md:text-base transition-all duration-150 shadow-sm hover:shadow-md focus:outline-none flex gap-3 items-start ${
+                        className={`w-full text-left rounded-3xl border transition-all duration-150 shadow-sm hover:shadow-md focus:outline-none ${
                         isSelected
                             ? "border-brand-dark bg-brand-dark text-white"
                             : "border-slate-200 bg-white hover:border-brand-light"
-                        }`}cd
+                        }`}
                     >
-                        <span className="font-semibold shrink-0 mt-0.5">
-                        {key})
-                        </span>
-                        <span>{option.text}</span>
+                        <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-center p-4 md:p-6">
+                        {/* Pilt – mobiilis üleval, desktopis vasakul */}
+                        {option.image && (
+                            <img
+                            src={option.image}
+                            alt={option.alt || option.text}
+                            className="w-40 h-40 md:w-52 md:h-52 object-cover rounded-3xl border border-white/60 shadow-md mx-auto md:mx-0 shrink-0"
+                            />
+                        )}
+
+                        {/* Tekst – mobiilis pildi all, desktopis paremal */}
+                        <div className="flex-1 mt-3 md:mt-0">
+                            <p className="text-lg md:text-xl font-semibold leading-snug">
+                            {option.text}
+                            </p>
+                        </div>
+                        </div>
                     </button>
                     );
                 })}
                 </div>
+
+
             </div>
 
             <div className="flex justify-between items-center mt-4 text-xs md:text-sm">
@@ -485,29 +533,44 @@ const handleSendEmail = async (e) => {
         ) : (
           <div className="space-y-8">
             {result && (
-              <section>
-                <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
-                  Sinu tulemus
+            <section className="pt-2">
+                {/* Ülemine blokk – keskjoondatud */}
+                <div className="flex flex-col items-center text-center mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
+                    Sinu tulemus
                 </h2>
-                <p className="text-sm uppercase tracking-wide text-slate-500 mb-1">
-                  Perearsti tüüp
+
+                {/* SUUR PILT Sinu tulemus ja Perearsti tüüp vahel */}
+                <img
+                    src={result.image || "/result/default.png"} // muuda vastavalt oma failile
+                    alt={result.title}
+                    className="w-60 h-60 md:w-80 md:h-80 object-cover rounded-[2.25rem] shadow-xl mb-4"
+                />
+
+                <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-slate-500 mb-2">
+                    Perearsti tüüp
                 </p>
-                <p className="text-lg md:text-xl font-semibold text-slate-900 mb-1">
-                  {result.title}
+
+                <p className="text-xl md:text-2xl font-semibold text-slate-900 mb-1">
+                    {result.title}
                 </p>
+
                 {result.subtitle && (
-                  <p className="text-sm md:text-base text-slate-600 mb-2">
+                    <p className="text-sm md:text-base text-slate-600 mb-3">
                     {result.subtitle}
-                  </p>
+                    </p>
                 )}
-                <p className="inline-flex items-center px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-mono mb-3">
-                  MBTI: {result.mbti}
+
+
+                </div>
+
+                {/* Pikk kirjeldus – loetavuse huvides jätame vasakule joondatuks */}
+                <p className="text-sm md:text-base text-slate-700 leading-relaxed">
+                {result.description}
                 </p>
-                <p className="text-sm md:text-base text-slate-700">
-                  {result.description}
-                </p>
-              </section>
+            </section>
             )}
+
 
             <section>
               <h3 className="text-lg font-semibold text-slate-900 mb-3">
@@ -604,7 +667,6 @@ const handleSendEmail = async (e) => {
               >
                 Tee test uuesti
               </button>
-              <span>Võid seda lehte kasutada vabalt konverentsimänguna. 🎈</span>
             </div>
           </div>
         )}
