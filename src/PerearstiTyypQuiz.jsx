@@ -304,7 +304,7 @@ function buildEmailBody(name, result, summary) {
     `${result.description}\n\n` +
     `Küsimuste ja vastuste ülevaade:\n\n${summaryLines}\n\n` +
     `Tervitustega\n` +
-    `Konverentsi korraldajad`
+    `Terviseagentuur`
   );
 }
 
@@ -612,7 +612,7 @@ const handleSendEmail = async (e) => {
 
             <section>
               <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                Saada tulemus e-mailiga endale
+                Saada tulemus enda meilile ja saa lisaks infot abiarstide praktika ja residentuuritsüklite kohta erinevates keskustes üle Eesti.
               </h3>
               <form
                 onSubmit={handleSendEmail}
@@ -621,14 +621,14 @@ const handleSendEmail = async (e) => {
                 <div className="grid md:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-medium text-slate-700 mb-1">
-                      Nimi (valikuline)
+                      Nimi 
                     </label>
                     <input
                       type="text"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900/60 focus:border-slate-900"
-                      placeholder="nt. Mari Meditsiinitudeng"
+                      placeholder="nt. Eesnimi Perekonnanimi Meditsiinitudeng"
                     />
                   </div>
                   <div>
