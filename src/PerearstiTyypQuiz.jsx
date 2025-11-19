@@ -460,10 +460,10 @@ const handleSendEmail = async (e) => {
       <Card>
         <div className="mb-6 text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
-            Milline perearst sina oled?
+            Saa teada millise profiiliga perearst Sina oled?
           </h1>
           <p className="text-sm md:text-base text-slate-600">
-            Tee 8 valikut ja saa teada.
+            Tee 8 valikut ja saa teada lisaks ka abiarstide praktika ja residentuuritsüklite kohta erinevates keskustes üle Eesti.
           </p>
         </div>
 
@@ -632,7 +632,7 @@ const handleSendEmail = async (e) => {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-slate-700 mb-1">
+                    <label className="block text-xs font-medium textnpm run deployslate-700 mb-1">
                       E-posti aadress
                     </label>
                     <input
