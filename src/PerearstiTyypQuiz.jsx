@@ -436,7 +436,7 @@ const handleSendEmail = async (e) => {
 
     if (response.ok) {
       setEmailStatus(
-        "Tulemus saadeti edukalt Formspree kaudu. Kontrolli oma postkasti (ja/või Formspree vormi seadistatud adressaati). 📬"
+        "Tulemus teele pandud. 📬"
       );
       // soovi korral: tühjenda ainult email/name väljad, mitte kogu quizi state
       // setEmail("");
