@@ -123,11 +123,11 @@ const questions = [
   },
   {
     id: 8,
-    text: "Ootamatud patsiendid ja lakkamatud kõned toovad ootamatult palju pöördumisi:",
+    text: "Erakorralised patsiendid ja lakkamatud kõned toovad ootamatult palju pöördumisi:",
     dimension: "JP",
     options: {
       A: {
-        text: "Loome konkreetse protsessi: kes mida triažeerib, mis on vastamise tähtajad, selged reeglid.",
+        text: "Loome perearstikeskuse meeskonnaga konkreetse protsessi: kes mida triažeerib, mis on vastamise tähtajad, selged reeglid.",
         letter: "J",
         image: "/answers/q8-a.jpg",
       },
