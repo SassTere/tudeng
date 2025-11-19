@@ -158,9 +158,9 @@ const typeMap = {
   },
   INFJ: {
     title: "Zen-Empaatiline Perearst",
-    subtitle: "Sügav kuulaja ja märgaja",
+    subtitle: "Tähelepanelik kuulaja ja märkaja",
     description:
-      "Sa tabad varjatud muresid, kuulad rahulikult ja toetad eriti hästi vaimse tervise ning elukriiside korral. Sul on võime näha inimese lugu laiemalt – kuidas tervis, suhted, töö ja väärtused omavahel seotud on. Patsient võib sinu juures esimest korda tunda, et keegi paneb tema killud tervikuks. Samas võid ise kergesti üle koormatud saada, kui proovida kõiki „päästa“ – sinu tugevus tuleb paremini esile siis, kui jagad vastutust meeskonnaga ega unusta ka enda vajadusi.",
+      "Sa tabad varjatud muresid, kuulad rahulikult ja toetad eriti hästi vaimse tervise probleemide ning elukriiside korral. Sul on võime näha inimese lugu laiemalt – kuidas tervis, suhted, töö ja väärtused omavahel seotud on. Patsient võib sinu juures esimest korda tunda, et keegi paneb tema killud tervikuks. Samas võid ise end kergesti üle koormata, kui proovid kõiki „päästa“ – sinu tugevus tuleb paremini esile siis, kui jagad vastutust meeskonnaga ega unusta ka enda vajadusi.",
     image: "/result/INFJ.png",
   },
   INTJ: {
@@ -186,7 +186,7 @@ const typeMap = {
   },
   INFP: {
     title: "Zen-Empaatiline Perearst",
-    subtitle: "Ideaalist kantud hoolija",
+    subtitle: "Hooliv idealist",
     description:
       "Sa tahad, et patsiendil päriselt parem oleks – mitte ainult numbrites, vaid ka elukvaliteedis ja enesetundes. Sageli näed inimest kui tervikut ja otsid lahendusi, mis sobiksid tema väärtuste ja elustiiliga. Võid olla eriti hea noorte, tundlike või „süsteemikartlike“ patsientidega, sest sinu juures ei pea mängima tugevat. Samas võib ideaalne lahendus jääda mõnikord reaalsusega kokku põrkama – kui lubad endale ka väikeseid praktilisi kompromisse, on sul lihtsam oma põhimõtteid pikaajaliselt hoida.",
     image: "/result/INFP.png",
@@ -200,7 +200,7 @@ const typeMap = {
   },
   ESTP: {
     title: "Kiirreageerija ja Multitaskija",
-    subtitle: "Ägedate juhtude lemmik",
+    subtitle: "Keerukate juhtude lemmik",
     description:
       "Sa oled omas elemendis siis, kui päev on tihe ja ettearvamatu – keeruline triaaž, ootamatud olukorrad ja kiire otsustamine sobivad sulle. Patsiendid tajuvad sind tihti „tegutseja“ tüüpi arstina, kes ei jää liiga kauaks mõtlema, kui on vaja abi. Sa õpid hästi kogemusest ja praktilisest tööst ning sul on loomulik julgus võtta vastutust. Samas võib rutiinne dokumentatsioon ja detailne järelkontroll tunduda tüütuna – kui lood endale lihtsad rutiinid ja tiimi toe paberitöö jaoks, saab sinu tugevus veel paremini särada.",
     image: "/result/ESTP.png", 
@@ -560,7 +560,7 @@ const handleSendEmail = async (e) => {
                 </p>
 
                 {result.subtitle && (
-                    <p className="text-sm md:text-base text-slate-600 mb-3">
+                    <p className="text-base md:text-lg font-semibold text-slate-800 mb-3">
                     {result.subtitle}
                     </p>
                 )}
@@ -624,7 +624,7 @@ const handleSendEmail = async (e) => {
                             {info.title}
                           </p>
                           {info.subtitle && (
-                            <p className="text-xs md:text-sm text-slate-600 mt-1">
+                            <p className="text-sm md:text-base font-semibold text-slate-800 mt-1">
                               {info.subtitle}
                             </p>
                           )}
