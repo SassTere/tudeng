@@ -617,9 +617,6 @@ const handleSendEmail = async (e) => {
 
                         {/* pealkirjad */}
                         <div>
-                          <p className="text-xs uppercase tracking-[0.2em] text-slate-500 mb-1">
-                            {mbtiKey}
-                          </p>
                           <p className="text-base md:text-lg font-semibold text-slate-900">
                             {info.title}
                           </p>
